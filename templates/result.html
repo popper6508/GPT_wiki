@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result Page</title>
+</head>
+<body>
+  <h1>Generated Book</h1>
+  <table>
+    <thead>
+      <tr>topic</tr>
+    </thead>
+    <tbody>
+      {% for index in range(chapters|length) %}
+      <tr>
+        <td>Chapter {{ index+1 }}</td>
+        <td>{{ chapters[index] }}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>{{ books[index] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>    
+  </table>
+</body>
+</html>
