@@ -22,7 +22,7 @@ def result():
     # Call gpt_for_book() function with the form data
     chapters, books = gpt_for_book(topic, num_chapter, make_for_whom)
 
-    return render_template('result.html', chapters=chapters, books=books)
+    return render_template('result.html', chapters=chapters, books=books, topic = topic)
 
 if __name__ == '__main__':
     app.run(debug=True)
