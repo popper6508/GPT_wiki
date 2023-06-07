@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Result Page</title>
+  <title>GPT study book</title>
 </head>
 <body>
   <h1>GPT study book</h1>
@@ -12,8 +12,8 @@
     <tbody>
       {% for index in range(chapters|length) %}
       <tr>
-        <td>{{ chapters[index] }}</td>
-        <td>{{ books[index] }}</td>
+        {{ chapters[index] }}
+        {{ books[index] }}
       </tr>
       {% endfor %}
     </tbody>    
