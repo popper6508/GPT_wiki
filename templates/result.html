@@ -4,18 +4,15 @@
   <title>Result Page</title>
 </head>
 <body>
-  <h1>Generated Book</h1>
+  <h1>GPT study book</h1>
   <table>
     <thead>
-      <tr> topic </tr>
+      <tr>topic</tr>
     </thead>
     <tbody>
       {% for index in range(chapters|length) %}
       <tr>
         <td>{{ chapters[index] }}</td>
-      </tr>
-      <tr>
-        <td></td>
         <td>{{ books[index] }}</td>
       </tr>
       {% endfor %}

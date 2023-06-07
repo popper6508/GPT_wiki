@@ -21,8 +21,10 @@ def result():
 
     # Call gpt_for_book() function with the form data
     chapters, books = gpt_for_book(topic, num_chapter, make_for_whom)
+    formatted_chapters = [f"Chapter {i+1}. {chapter}" for i, chapter in enumerate(chapters)]
+    formatted_books = ["\n\n".join(book.split("\n\n")[1:]) for book in books]
 
-    return render_template('result.html', chapters=chapters, books=books, topic = topic)
+    return render_template('result.html', topic = topic, chapters=formatted_chapters, books=formatted_books)
 
 if __name__ == '__main__':
     app.run(debug=True)
