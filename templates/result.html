@@ -7,12 +7,12 @@
   <h1>GPT study book</h1>
   <table>
     <thead>
-      <tr>topic</tr>
+      <tr colspan = "2">{{topic}}</tr>
     </thead>
     <tbody>
       {% for index in range(chapters|length) %}
       <tr>
-        {{ chapters[index] }}
+        {{ chapters[index] }} <br>
         {{ books[index] }}
       </tr>
       {% endfor %}
