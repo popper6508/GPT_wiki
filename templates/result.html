@@ -12,8 +12,7 @@
     <tbody>
       {% for index in range(chapters|length) %}
       <tr>
-        {{ chapters[index] }} <br>
-        {{ books[index] }}
+        <td><pre>{{ chapters[index] }}<br>{{ books[index] }}</pre></td>
       </tr>
       {% endfor %}
     </tbody>    
