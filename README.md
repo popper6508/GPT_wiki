@@ -9,6 +9,6 @@
   - 파라미터를 입력할 수 있는 창
 4. result.html
   - 입력한 결과가 나오는 창
-  - <pre> , {{}}를 통해 python 상의 변수를 html로 가져와 생성
+  - python 상의 변수를 html로 가져와 생성
 5. style.css
   - html에 반영할 스타일 생성 스크립트
